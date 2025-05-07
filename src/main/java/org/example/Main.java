@@ -33,6 +33,8 @@ public class   Main {
 
         Main m = new Main();
         Connection conn = m.get_Db_Connection();
+        Database_Read dr = new Database_Read(conn);
+        dr.read();
         try{
             conn.close();
         }
